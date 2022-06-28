@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="お名前を入力してください"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:ignore="speakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvLive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="住まいを入力してください"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etLive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:ignore="speakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="表示"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btClearN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="クリア名前"/>
+
+        <Button
+            android:id="@+id/btClearL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="クリア住所"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:background="#2C00BCD4"
+        android:text=""
+        android:textSize="24sp"/>
+</LinearLayout>
